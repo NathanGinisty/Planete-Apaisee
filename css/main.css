@@ -59,18 +59,18 @@ section {
 
 @media screen and (min-width: 601px) and (max-width: 992px) {
     section {
-        padding: 150px 15vw;
+        padding: 150px 13vw;
         /* background-color: orange; */
     }
 
     nav {
-        padding: 0 2vw;
+        padding: 0 1vw;
     }
 }
 
 @media screen and (max-width: 600px) {
     section {
-        padding: 150px 10vw;
+        padding: 150px 8vw;
         /* background-color: red; */
     }
 
