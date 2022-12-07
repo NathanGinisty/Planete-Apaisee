@@ -51,7 +51,7 @@
 
             <div>
                 <div class="w3-padding-large w3-content w3-border w3-text-white">
-                    <h1 class="w3-xxlarge  w3-wide " style="padding-bottom:12px">Contactez nos intervenants</h1>
+                    <h1 class="w3-xxlarge  w3-wide " style="padding-bottom:12px">Demandez un rendez-vous</h1>
                     <a href="tel:02-52-88-02-70">
                         <h2 class="w3-xlarge fa fa-phone w3-hover-opacity">+33 2 52 88 02 70</h2>
                     </a>
@@ -61,27 +61,34 @@
 
         <!-- https://html.form.guide/contact-form/php-email-contact-form/ -->
         <section class="w3-display-container">
-            <h2 class="w3-text-black text-center" style="padding-bottom: 24px">Ou demandez un rendez-vous par mail</h2>
-                <form action="action_page.php">
-              
-                  <label for="fname">Prénom</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Votre prénom...">
-              
-                  <label for="lname">Nom</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Votre nom..">
-              
-                  <label for="country">Pays</label>
-                  <select id="country" name="country">
-                    <option value="france">France</option>
-                    <option value="autre">Autre</option>
-                  </select>
-              
-                  <label for="subject">Message</label>
-                  <textarea id="subject" name="subject" placeholder="..." style="height:200px"></textarea>
-              
-                  <input type="submit" value="Envoyer">
-              
-                </form>
+            <h2 class="w3-text-black text-center">Prenez rendez-vous directement sur le
+                site internet</h2>
+            <form action="action_page.php">
+                <!-- change selon l'intervenant -->
+                <div class="w3-container w3-light-grey w3-padding" style="margin: 32px; height: 400px">
+                    agenda
+                </div>
+
+                <label for="fname">Prénom</label>
+                <input type="text" id="fname" name="firstname" placeholder="Votre prénom...">
+
+                <label for="lname">Nom</label>
+                <input type="text" id="lname" name="lastname" placeholder="Votre nom..">
+
+                <label for="country">Intervenants</label>
+                <select id="country" name="country">
+                    <option value="france">Lhassane Menabhi</option>
+                    <option value="autre">Opale</option>
+                    <option value="autre">Mr C.B.</option>
+                    <option value="autre">Victor-Alex Anaclet</option>
+                </select>
+
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="..." style="height:200px"></textarea>
+
+                <input type="submit" value="Envoyer">
+
+            </form>
         </section>
     </main>
 
