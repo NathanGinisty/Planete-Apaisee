@@ -1,15 +1,72 @@
-.color-primary {
-    color: #333;
+/*------------ GRID INTERVENANTS ------------ */
+
+.int-row {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 0 4px; */
 }
 
-.color-secondary {
-    color: white;
+/* Create four equal columns that sits next to each other */
+.int-column {
+    flex: 25%;
+    max-width: 50%;
 }
 
-.color-tertiary {
-    color: white;
+.int-column-img {
+    position: relative;
+    flex: 1;
+    z-index: 2;
 }
 
-/*---------------------*/
+.int-column-img-cropped {
+    /* position: absolute; */
+    min-height: 150px;
+    max-height: 300px;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    object-fit: cover;
+}
 
+@media (max-width: 900px) {
+    .int-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
 
+/*------------ BLOC INTERVENANTS ------------ */
+
+.block-intervenant {
+    background: white;
+    margin: 12px 6px;
+    padding: 0px;
+
+    border-radius: 5px;
+    /* box-shadow: 2px 2px 5px lightgrey; */
+
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    z-index: 1;
+
+    /* height: 350px; */
+}
+
+.block-intervenant h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+.block-intervenant p {
+    padding: 0 12px;
+}
+
+.block-intervenant:hover {
+    transition-duration: 0.2s;
+    transform: scale(1.01);
+    filter: saturate(1.2);
+}

@@ -44,8 +44,10 @@
                 <!-- Mobile only -->
                 <div class="w3-dropdown-hover w3-hide-medium w3-hide-large" style="z-index:100;">
                     <button class="w3-padding-large w3-button fa fa-bars" title="More"></button>
-                    <div class="w3-dropdown-content w3-bar-block w3-card-4" style="right:1vw; z-index:100; overflow: visible; position: relative">
-                        <a href="index.html" class="w3-bar-item w3-button" style="z-index:100; overflow: visible; position: relative">ACCUEIL</a>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4"
+                        style="right:1vw; z-index:100; overflow: visible; position: relative">
+                        <a href="index.html" class="w3-bar-item w3-button"
+                            style="z-index:100; overflow: visible; position: relative">ACCUEIL</a>
                         <a href="intervenants.html" class="w3-bar-item w3-button">INTERVENANTS</a>
                         <!-- <a href="blog.html" class="w3-bar-item w3-button">BLOG</a> -->
                         <a href="contacts.html" class="w3-bar-item w3-button">CONTACTS</a>
@@ -74,28 +76,29 @@
 
         <section class="w3-display-container w3-center">
             <h2 class="w3-text-black w3-xxlarge">Nos intervenants disponible pour vous !</h2>
-            <p class="w3-text-black">Coach lifestyle, accompagnant, </p>
+            <p class="w3-text-black">Planète apaisé est un site qui vois permettra de trouver un interlocuteurs qui
+                répondra votre besoin.
+                Nos intervenants sont sélectionné grâce à leur réussite dans leur domaine et leur temps d'exercice gage
+                d'expérience.
+                Nous souhaitons que vous preniez le temps du premier contact afin d'établir vos besoins et ainsi y
+                répondre. </p>
         </section>
 
         <!--filter: blur(5px);-->
-        <section class="w3-display-container  w3-center" id="intervenants"
+        <section class="w3-display-container" id="intervenants"
             style="background: url('img/bg_3.png') no-repeat center center fixed; background-size: cover;">
-            <h2 class="w3-text-white w3-xxlarge" style="padding-bottom: 32px;">Nos intervenants</h2>
+            <h2 class="w3-text-white w3-xxlarge w3-center" style="padding-bottom: 32px;">Nos intervenants</h2>
 
             <!-- Grid -->
-            <div class="w3-row">
-
-                <!-- Entry -->
-                <div class="w3-col w3-border w3-white l6">
-                    <div class="w3-round-large"> <!-- ne marche pas, a fix, voir reservia -->
-                        <img src="img/tmp-photo.webp" alt="Victor-Alex Anaclet" style="width:100%">
-                    </div>
-                    <div class="w3-container">
-                        <h2 class="w3-xlarge"><b>Victor-Alex Anaclet</b></h2>
-                        <h3><q> L’accompagnement individuel, je préfère ce terme au mot coaching. </q></h3>
-                    </div>
-
-                    <div class="w3-container">
+            <div class="int-row">
+                <!-- ENTRIES -->
+                <div class="int-column">
+                    <!--Entry-->
+                    <div class="block-intervenant">
+                        <div class="int-column-img">
+                            <img class="int-column-img-cropped" src="img/tmp-photo.webp" alt="hotel">
+                        </div>
+                        <h3><b>Victor-Alex Anaclet</b></h3>
                         <p> J’accompagne :<br>
                             • Les personnes à mieux être dans leur relation au quotidien par une meilleure
                             connaissance et acceptation d’eux-mêmes, à mieux faire face aux peurs qui paralysent
@@ -130,27 +133,20 @@
                             • Développez un mental Gagnant Pour Atteindre Vos Objectifs Plus Rapidement<br>
                             • Le mind set du mental gagnant<br>
                         </p>
-                        <div class="w3-right">
-                            <p>
-                                <a href="contacts.html#VAnaclet">
-                                    <button class="w3-button w3-padding-large w3-white w3-border">
-                                        <b>Prendre rendez-vous »</b>
-                                    </button>
-                                </a>
-                            </p>
+                        <a href="contacts.html#VAnaclet">
+                            <button class="w3-button w3-padding-large w3-white w3-border w3-right" style="margin: 10px">
+                                <b>Prendre rendez-vous »</b>
+                            </button>
+                        </a>
+                    </div>
+                    <!--Entry-->
+
+                    <!--Entry-->
+                    <div class="block-intervenant">
+                        <div class="int-column-img">
+                            <img class="int-column-img-cropped" src="img/tmp-photo.webp" alt="hotel">
                         </div>
-                    </div>
-                </div>
-                <!-- Entry end -->
-
-                <!-- Entry -->
-                <div class="w3-col w3-border w3-white l6">
-                    <img src="img/tmp-photo.webp" alt="Mr C.B." style="width:100%">
-                    <div class="w3-container">
-                        <h2 class="w3-xlarge"><b>Mr C.B.</b></h2>
-                    </div>
-
-                    <div class="w3-container">
+                        <h3><b>Mr C.B.</b></h3>
                         <p> Initié aux différentes techniques d’art divinatoire et sciences occultes, je mets mon
                             expérience à votre disposition qui vous permettra de résoudre efficacement tous vos
                             différents problèmes et obstacles que vous rencontré dans votre vie.
@@ -159,54 +155,42 @@
                             Les rituels de protection, de prospérité et de chance vous apporteront le bien-être
                             souhaité et vous guidera sur le chemin le meilleur.
                         </p>
-                        <div class="w3-right">
-                            <p>
-                                <a href="contacts.html#MrCB">
-                                    <button class="w3-button w3-padding-large w3-white w3-border">
-                                        <b>Prendre rendez-vous »</b>
-                                    </button>
-                                </a>
-                            </p>
-                        </div>
+                        <a href="contacts.html#MrCB">
+                            <button class="w3-button w3-padding-large w3-white w3-border w3-right" style="margin: 10px">
+                                <b>Prendre rendez-vous »</b>
+                            </button>
+                        </a>
                     </div>
+                    <!--Entry-->
                 </div>
-                <!-- Entry end -->
 
-                <!-- Entry -->
-                <div class="w3-col w3-border w3-white l6">
-                    <img src="img/tmp-photo.webp" alt="Opale" style="width:100%">
-                    <div class="w3-container">
-                        <h2 class="w3-xlarge"><b>OPALE</b></h2>
-                    </div>
-
-                    <div class="w3-container">
+                <div class="int-column">
+                    <!--Entry-->
+                    <div class="block-intervenant">
+                        <div class="int-column-img">
+                            <img class="int-column-img-cropped" src="img/tmp-photo.webp" alt="hotel">
+                        </div>
+                        <h3><b>OPALE</b></h3>
                         <p> La cartomancienne OPALE vous prédira et vous aidera par l’interprétation des cartes, à
                             mieux comprendre les situations difficiles que vous vivez actuellement.<br>
                             Vous n’aurez qu’à poser vos questions pour avoir des réponses appropriées.<br>
                             OPALE vous reçois en direct par téléphone ou par e-mail pour vous éclairer et prendre
                             les bonnes décisions.
                         </p>
-                        <div class="w3-right">
-                            <p>
-                                <a href="contacts.html#Opale">
-                                    <button class="w3-button w3-padding-large w3-white w3-border">
-                                        <b>Prendre rendez-vous »</b>
-                                    </button>
-                                </a>
-                            </p>
+                        <a href="contacts.html#Opale">
+                            <button class="w3-button w3-padding-large w3-white w3-border w3-right" style="margin: 10px">
+                                <b>Prendre rendez-vous »</b>
+                            </button>
+                        </a>
+                    </div>
+                    <!--Entry-->
+
+                    <!--Entry-->
+                    <div class="block-intervenant">
+                        <div class="int-column-img">
+                            <img class="int-column-img-cropped" src="img/tmp-photo.webp" alt="hotel">
                         </div>
-                    </div>
-                </div>
-                <!-- Entry end -->
-
-                <!-- Entry -->
-                <div class="w3-col w3-border w3-white l6">
-                    <img src="img/tmp-photo.webp" alt="Lhassane Menabhi" style="width:100%">
-                    <div class="w3-container">
-                        <h2 class="w3-xlarge"><b>Lhassane Menabhi</b></h2>
-                    </div>
-
-                    <div class="w3-container">
+                        <h3><b>Lhassane Menabhi</b></h3>
                         <p> Coach énergietitien praticien depuis 1995. Je travaille sur différents degré vibratoire
                             de la nature humaine, ce qui permet d’avoir accès à une multitude d’émotions qui
                             composent la nature des chocs et surcharge émotionnelle. Mes initiations et formations
@@ -222,18 +206,14 @@
                             Efficacité aussi sur les tissus du corps ! mais travaux dure de 1h15 à 2h est facturé à
                             partir de 150 €
                         </p>
-                        <div class="w3-right">
-                            <p>
-                                <a href="contacts.html#LMenabhi">
-                                    <button class="w3-button w3-padding-large w3-white w3-border">
-                                        <b>Prendre rendez-vous »</b>
-                                    </button>
-                                </a>
-                            </p>
-                        </div>
+                        <a href="contacts.html#LMenabhi">
+                            <button class="w3-button w3-padding-large w3-white w3-border w3-right" style="margin: 10px">
+                                <b>Prendre rendez-vous »</b>
+                            </button>
+                        </a>
                     </div>
+                    <!--Entry-->
                 </div>
-                <!-- Entry end -->
 
                 <!-- END ENTRIES -->
             </div>
