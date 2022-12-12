@@ -20,7 +20,7 @@
 
 <body>
 
-    <header>
+    <header style="z-index: 10;">
         <!-- Contact Bar -->
         <!-- <div class="w3-display-container w3-hide-small">
             <div class="w3-bar w3-indigo">
@@ -33,7 +33,7 @@
         </div> -->
 
         <!-- Navbar -->
-        <nav class="w3-display-container w3-top w3-card w3-bar w3-white" style="z-index: 10;">
+        <nav class="w3-display-container w3-top w3-bar">
             <!-- Icon -->
             <a href="index.html" class="simple-text w3-left">
                 <img src="img/logo-1.webp" class="w3-padding" style="height:59px" alt="Planète Apaisé">
@@ -48,9 +48,9 @@
                 <a href="contacts.html" class="w3-bar-item w3-button w3-padding-16 w3-hide-small">CONTACTS</a>
                 <!-- Mobile only -->
                 <div class="w3-dropdown-hover w3-hide-medium w3-hide-large" style="z-index:100;">
-                    <button class="w3-padding-large w3-button fa fa-bars" title="More"></button>
+                    <button class="w3-padding-large w3-button fa fa-bars w3-right" style="display: flex; float: right" title="More"></button>
                     <div class="w3-dropdown-content w3-bar-block w3-card-4"
-                        style="right:1vw; z-index:100; overflow: visible; position: relative">
+                        style="z-index:100; overflow: visible; position: relative; height: 129px;">
                         <a href="index.html" class="w3-bar-item w3-button"
                             style="z-index:100; overflow: visible; position: relative">ACCUEIL</a>
                         <a href="#intervenants" class="w3-bar-item w3-button">INTERVENANTS</a>
@@ -64,6 +64,8 @@
     </header>
 
     <main>
+
+
         <!-- A AJOUTER: passement d'image de site en arrière plan-->
         <section class="w3-display-container w3-center"
             style="background: url('img/bg_2.webp') no-repeat center center fixed; background-size: cover; top:58px;">
@@ -81,7 +83,8 @@
 
         <section class="w3-display-container w3-center">
             <h2 class="w3-text-black w3-xxlarge">Nos intervenants disponible pour vous!</h2>
-            <p class="w3-text-black" style="font-size: 16px;">Planète apaisée est un site qui vous permettra de trouver un interlocuteurs qui
+            <p class="w3-text-black" style="font-size: 16px;">Planète apaisée est un site qui vous permettra de trouver
+                un interlocuteurs qui
                 répondra votre besoin.
                 Nos intervenants sont sélectionné grâce à leur réussite dans leur domaine et leur temps d'exercice gage
                 d'expérience.
